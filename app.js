@@ -41,7 +41,7 @@ client.addListener('chat', function (channel, user, message) {
 
         console.log("HI1");
         /* Add the new KPM to the database */
-        db_manager.addKPMToDatabase(channel, final_kpm, new Date(), function() {
+        db_manager.addKPMToDatabase(arv_channel, final_kpm, new Date(), function() {
             /* Get the higest KPM from the database */
             db_manager.getHighestKPM(function(query_result) {
                 record_holder = query_result;
