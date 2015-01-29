@@ -33,7 +33,7 @@ client.addListener('chat', function (channel, user, message) {
 
     /* If we finished logging */
     if (elapsed_time >= (60000 * minutes)) {
-        var final_kpm = count / minutes;
+        var final_kpm = (count / minutes).toFixed(1);
 
         /* Reset variables */
         start_time = new Date().getTime();
