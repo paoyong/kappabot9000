@@ -10,7 +10,8 @@
   "license": "ISC",
   "dependencies": {
     "twitch-irc": "^1.1.0",
-    "mongoose": "*"
+    "mongoose": "*",
+    "date-format": "*"
   },
   "devDependencies": {}
 }
