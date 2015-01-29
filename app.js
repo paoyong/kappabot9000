@@ -56,7 +56,7 @@ client.addListener('chat', function (channel, user, message) {
     }
 });
 
-function generateMesageSync(final_kpm, record_holder_query) {
+function generateMessageSync(final_kpm, record_holder_query) {
         console.log("FUK");
         var formattedDate = date_format.asString('MM/dd/yy', record_holder_query.date);
         var msg = '/me ~~ KPMBOT9000: Kappa per minute was ' + final_kpm + '! Current record holder is ' + record_holder_query.channel + '\'s stream with a KPM of ' + record_holder_query.kpm.toFixed(1) + ' on ' + formattedDate + '!';
