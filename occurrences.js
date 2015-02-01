@@ -11,5 +11,4 @@ module.exports = function (string, subString, allowOverlapping) {
     }
     return(n);
     
-}
-
+};

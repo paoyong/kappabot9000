@@ -28,7 +28,7 @@ module.exports = {
 
             console.log('Successfully added KPM record ' + kpm_record + 'to DB!');
         });
-        callback()
+        callback();
     },
     getHighestKPM: function(callback) {
         var highest = KPM.findOne({}, {}, {
@@ -40,4 +40,4 @@ module.exports = {
             callback(query);
         });
     }
-}
+};
